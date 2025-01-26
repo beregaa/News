@@ -1,0 +1,37 @@
+.mainHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.logo {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  border-radius: 4px;
+}
+
+.logo a:hover,
+.logo a {
+  color: #e1e1d7;
+  text-decoration: none;
+}
+
+.mainHeader ul {
+  display: flex;
+  gap: 32px;
+  font-weight: bold;
+}
+
+.mainHeader ul a {
+  text-decoration: none;
+  color: #e5e5e1;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+.mainHeader ul a:hover,
+.mainHeader ul a.active {
+  background-color: #bcbcb7;
+  color: #181817;
+}
