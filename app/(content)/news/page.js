@@ -1,14 +1,17 @@
 import Link from "next/link";
 import styles from "./page.module.scss";
-import { DUMMY_NEWS } from "@/dummy-news";
 import NewsList from "@/components/NewsList/NewsList";
+import { getAllNews } from "@/lib/news";
 
-export default function NewsPage() {
+export default async function NewsPage() {
+  const news = await getAllNews();
+
+  
   return (
     <div>
       <h1>NEWS PAGE</h1>
 
-      <NewsList news={DUMMY_NEWS} />
+      <NewsList news={news} />
     </div>
   );
 }

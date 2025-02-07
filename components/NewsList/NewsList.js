@@ -1,4 +1,3 @@
-import { notFound } from "next/navigation";
 import styles from "./NewsList.module.scss";
 import Link from "next/link";
 
